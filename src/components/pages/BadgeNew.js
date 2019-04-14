@@ -4,6 +4,7 @@ import header from '../../images/badge-header.svg'
 import './styles/BadgeNew.css'
 import Badge from '../Badge'
 import avatarURL from '../../images/avatar.jpg'
+import BadgeForm from '../../components/BadgeForm'
 
 class BadgeNew extends Component {
     render() {
@@ -14,7 +15,7 @@ class BadgeNew extends Component {
                     <img className='img-fluid' src={header} alt='Hero'/>
                 </div>
                 <div className='row'>
-                    <div className='col'>
+                    <div className='col-6'>
                         <Badge firstName='Manuel'
                                lastName='Alférez'
                                jobInfo='Developer and GDG organizer'
@@ -22,7 +23,9 @@ class BadgeNew extends Component {
                                web='manuelalferez.com'
                                avatar={avatarURL}/>
                     </div>
-                    /*<div className='col'></div>*/
+                    <div className='col-6'>
+                        <BadgeForm/>
+                    </div>
                 </div>
             </div>
         );
