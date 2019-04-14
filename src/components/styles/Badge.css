@@ -4,7 +4,10 @@
     border-radius: 8px 8px 8px 8px;
     overflow: hidden;
     height: 380px;
-    width: 100%;
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
 }
 
 .badge_header {
