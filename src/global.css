@@ -7,13 +7,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 body {
   font-family: 'Lato', 'Helvetica Neue', sans-serif;
   background-color: #F4F4F7;
