@@ -7,6 +7,32 @@ import avatarURL from '../../images/avatar.jpg'
 import BadgeForm from '../../components/BadgeForm'
 
 class BadgeNew extends Component {
+    state = {
+        form: {
+            firstName: '',
+            lastName: '',
+            email: '',
+            jobTittle: '',
+            twitter: ''
+        }
+    };
+
+    handleChange = e => {
+        // Primera forma de modificar el state
+        // const copia = this.state.form;
+        // copia[e.target.name] = e.target.value;
+        // this.setState({
+        //         form: copia
+        //     }
+        // )
+        this.setState({
+            form: {
+                ...this.state.form, //Copiamos el objeto form
+                [e.target.name]: e.target.value
+            }
+        })
+    };
+
     render() {
         return (
             <div>
@@ -16,15 +42,15 @@ class BadgeNew extends Component {
                 </div>
                 <div className='row'>
                     <div className='col-6'>
-                        <Badge firstName='Manuel'
-                               lastName='Alférez'
-                               jobInfo='Developer and GDG organizer'
-                               webURL='https://www.manuelalferez.com'
-                               web='manuelalferez.com'
+                        <Badge firstName={this.state.form.firstName}
+                               lastName={this.state.form.lastName}
+                               jobInfo={this.state.form.jobTittle}
+                               twitter={this.state.form.twitter}
                                avatar={avatarURL}/>
                     </div>
                     <div className='col-6'>
-                        <BadgeForm/>
+                        <BadgeForm onChange={this.handleChange}
+                                   formValues={this.state.form}/>
                     </div>
                 </div>
             </div>

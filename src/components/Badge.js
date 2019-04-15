@@ -20,8 +20,8 @@ class Badge extends Component {
 
         <div className="badge_section-info">
           <p>{this.props.jobInfo}</p>
-          <a href={this.props.webURL} target="_blank">
-            {this.props.web}
+          <a href={this.props.twitter}>
+            @{this.props.twitter}
           </a>
         </div>
         <div className="badge_footer">#devfest-2019</div>
