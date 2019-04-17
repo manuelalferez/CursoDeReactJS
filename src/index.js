@@ -1,10 +1,10 @@
 import React from "react";
 import {render} from "react-dom";
 import './global.css'
-import BadgeNew from './components/pages/BadgeNew'
+import Badges from './components/pages/Badges'
 import 'bootstrap/dist/css/bootstrap.css'
 
 // Selección del elemento del DOM dónde insertar
 const container = document.getElementById("app");
 
-render(<BadgeNew/>, container);
+render(<Badges/>, container);
