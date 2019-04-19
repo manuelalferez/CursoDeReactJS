@@ -1,2 +1,3 @@
-# CursoDeReactJS
-Curso de React.js que pertenece a los fundamentos vistos en Platzi
+# Curso de React.js
+
+Aplicación de los fundamentos del [Curso de React.js](https://platzi.com/clases/react/) impartido en Platzi, y una práctica de los mismos. 
