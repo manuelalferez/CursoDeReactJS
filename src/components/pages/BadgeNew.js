@@ -40,10 +40,10 @@ class BadgeNew extends Component {
                 </div>
                 <div className='row'>
                     <div className='col-6'>
-                        <Badge firstName={this.state.form.firstName}
-                               lastName={this.state.form.lastName}
-                               jobInfo={this.state.form.jobTittle}
-                               twitter={this.state.form.twitter}
+                        <Badge firstName={this.state.form.firstName || 'Nombre'}
+                               lastName={this.state.form.lastName || 'Apellidos'}
+                               jobInfo={this.state.form.jobTittle || 'Trabajo'}
+                               twitter={this.state.form.twitter || 'Twitter'}
                                avatar={avatarURL}/>
                     </div>
                     <div className='col-6'>

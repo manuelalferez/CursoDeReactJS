@@ -4,6 +4,8 @@ import './styles/Badges.css'
 import BadgesList from "../BadgesList";
 import {Link} from "react-router-dom";
 import api from "../../api";
+import Loader from "./Loader";
+import PageError from "./PageError";
 
 class Badges extends Component {
     constructor(props) {
@@ -31,10 +33,14 @@ class Badges extends Component {
 
     render() {
         if (this.state.loading) {
-            return <h1>Loading...</h1>
+            return <div className='Badges__center'>
+                <Loader/>
+            </div>
         }
-        if(this.state.error){
-            return `Error: ${this.state.error.message}`
+        if (this.state.error) {
+            return <div className='Badges__center'>
+                <PageError error={this.state.error}/>
+            </div>
         }
 
         return (

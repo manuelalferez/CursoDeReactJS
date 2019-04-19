@@ -21,6 +21,14 @@
     padding: 0 1rem;
 }
 
+.Badges__center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+}
+
 .Badges_conf-logo {
     margin-bottom: 2rem;
 }
